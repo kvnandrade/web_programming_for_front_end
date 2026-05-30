@@ -317,26 +317,4 @@ http://localhost:8000
 https://rickandmortyapi.com/api/character
 ```
 
-6. Teste os filtros e observe novas requisições com parâmetros como `name` e `status`.
-
-## Como publicar no GitHub
-
-Se o projeto ainda não estiver em um repositório Git, execute:
-
-```bash
-git init
-git add .
-git commit -m "Cria projeto Rick and Morty Universe"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-git push -u origin main
-```
-
-Se o repositório já existir localmente:
-
-```bash
-git add .
-git commit -m "Atualiza projeto Rick and Morty Universe"
-git push
-```
 
