@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website moderno sobre Rick and Morty com personagens carregados em tempo real pela API pública Rick and Morty.">
+  <title>Rick and Morty Universe</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="navbar" aria-label="Navegação principal">
+      <a class="logo" href="#inicio" aria-label="Voltar ao início">Rick and Morty Universe</a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="primary-menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#personagens">Personagens</a></li>
+        <li><a href="#api">API</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-padding" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Viagens interdimensionais, ciência e caos</p>
+        <h1 id="hero-title">Explore o multiverso de Rick and Morty em tempo real</h1>
+        <p>
+          Conheça personagens, espécies, status e localizações diretamente da API pública oficial.
+          Este projeto usa apenas HTML, CSS e JavaScript puro para criar uma experiência moderna,
+          responsiva e dinâmica.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#personagens">Ver personagens</a>
+          <a class="button button-secondary" href="#sobre">Conhecer a série</a>
+        </div>
+      </div>
+
+      <div class="hero-image-card" aria-label="Ilustração de portal interdimensional">
+        <img src="assets/portal.svg" alt="Portal verde estilizado representando viagens entre dimensões">
+      </div>
+    </section>
+
+    <section class="about section-padding" id="sobre" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">Sobre a série</p>
+        <h2 id="about-title">Humor ácido, ficção científica e infinitas dimensões</h2>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card">
+          <h3>História</h3>
+          <p>
+            Rick and Morty acompanha o cientista Rick Sanchez e seu neto Morty Smith em aventuras
+            por planetas, realidades paralelas e linhas temporais absurdas. A série mistura comédia,
+            drama familiar e conceitos avançados de ficção científica.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <h3>Universo</h3>
+          <p>
+            Cada episódio expande um multiverso cheio de criaturas, versões alternativas dos
+            protagonistas, sociedades alienígenas e dilemas morais apresentados com criatividade
+            visual e narrativa.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <h3>Projeto</h3>
+          <p>
+            A seção de personagens é carregada dinamicamente com dados reais da API Rick and Morty.
+            Nenhum card fica pronto no HTML: tudo é criado pelo JavaScript durante a execução.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="characters section-padding" id="personagens" aria-labelledby="characters-title">
+      <div class="section-heading">
+        <p class="eyebrow">Personagens</p>
+        <h2 id="characters-title">Galeria dinâmica da API</h2>
+        <p>
+          Pesquise por nome ou filtre pelo status. Os cards abaixo são criados via
+          <strong>fetch()</strong>, <strong>createElement()</strong> e <strong>appendChild()</strong>.
+        </p>
+      </div>
+
+      <form class="filters" id="character-filters" aria-label="Filtros de personagens">
+        <label class="filter-field" for="search-name">
+          <span>Pesquisar por nome</span>
+          <input id="search-name" name="name" type="search" placeholder="Ex.: Rick, Morty, Summer" autocomplete="off">
+        </label>
+
+        <label class="filter-field" for="status-filter">
+          <span>Filtrar por status</span>
+          <select id="status-filter" name="status">
+            <option value="">Todos</option>
+            <option value="alive">Vivo</option>
+            <option value="dead">Morto</option>
+            <option value="unknown">Desconhecido</option>
+          </select>
+        </label>
+      </form>
+
+      <div class="feedback loading" id="loading" role="status" aria-live="polite" hidden>
+        <span class="spinner" aria-hidden="true"></span>
+        <span>Carregando personagens...</span>
+      </div>
+
+      <div class="feedback error-message" id="error-message" role="alert" hidden></div>
+      <p class="result-summary" id="result-summary" aria-live="polite"></p>
+
+      <div class="cards-grid" id="characters-container" aria-live="polite"></div>
+    </section>
+
+    <section class="api-info section-padding" id="api" aria-labelledby="api-title">
+      <div class="api-panel">
+        <div>
+          <p class="eyebrow">API utilizada</p>
+          <h2 id="api-title">Rick and Morty API</h2>
+          <p>
+            Os dados são consumidos em tempo real do endpoint público
+            <code>https://rickandmortyapi.com/api/character</code>, que retorna personagens,
+            paginação e filtros por nome e status.
+          </p>
+        </div>
+        <a class="button button-primary" href="https://rickandmortyapi.com/" target="_blank" rel="noopener noreferrer">
+          Acessar API
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Desenvolvido para estudo de Front-End com HTML, CSS e JavaScript puro.</p>
+    <p>
+      Dados fornecidos pela
+      <a href="https://rickandmortyapi.com/" target="_blank" rel="noopener noreferrer">Rick and Morty API</a>.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

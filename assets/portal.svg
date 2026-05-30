@@ -1,0 +1,24 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Portal interdimensional estilizado</title>
+  <desc id="desc">Ilustração vetorial com portal verde, estrelas e órbitas inspirada em ficção científica.</desc>
+  <rect width="720" height="520" rx="44" fill="#09111F"/>
+  <circle cx="355" cy="260" r="204" fill="#11351E"/>
+  <circle cx="355" cy="260" r="176" fill="#38FF7A" fill-opacity="0.18"/>
+  <circle cx="355" cy="260" r="145" fill="#B6FF3D" fill-opacity="0.18"/>
+  <path d="M509.4 184.2C542.7 247.5 527 330.8 469.1 379.1C411.3 427.3 311.4 440.7 240.1 399.8C168.8 358.8 126 263.7 153 196.7C180.1 129.8 276.9 91.1 355.4 96.2C433.8 101.3 476.1 120.8 509.4 184.2Z" fill="#6AFF00" fill-opacity="0.34"/>
+  <path d="M494.6 224.8C511.4 284.6 473.4 350.7 405.3 376.9C337.3 403.1 239.4 389.4 205.1 335.1C170.8 280.8 200.1 185.8 258.6 153.4C317.2 120.9 404.9 151 449.7 174.5C477.3 189 486.3 195 494.6 224.8Z" fill="#D5FF35" fill-opacity="0.22"/>
+  <path d="M496 260C496 337.9 432.9 401 355 401C277.1 401 214 337.9 214 260C214 182.1 277.1 119 355 119C432.9 119 496 182.1 496 260Z" stroke="#86FF4F" stroke-width="10" stroke-dasharray="22 20"/>
+  <path d="M545 261C545 365.9 459.9 451 355 451C250.1 451 165 365.9 165 261C165 156.1 250.1 71 355 71C459.9 71 545 156.1 545 261Z" stroke="#12D66D" stroke-width="4" stroke-dasharray="6 18"/>
+  <path d="M157 310C213 233 296 196 401 199C473 201 522 226 563 260" stroke="#A8FF3E" stroke-width="14" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M178 360C247 321 317 311 388 330C439 344 482 342 528 313" stroke="#34F878" stroke-width="12" stroke-linecap="round" stroke-opacity="0.68"/>
+  <path d="M195 180C262 214 332 220 405 196C449 182 492 181 537 195" stroke="#E4FF48" stroke-width="10" stroke-linecap="round" stroke-opacity="0.62"/>
+  <circle cx="163" cy="128" r="5" fill="#B6FF3D"/>
+  <circle cx="579" cy="112" r="4" fill="#38FF7A"/>
+  <circle cx="609" cy="356" r="6" fill="#B6FF3D"/>
+  <circle cx="113" cy="358" r="4" fill="#38FF7A"/>
+  <circle cx="265" cy="72" r="3" fill="#E4FF48"/>
+  <circle cx="470" cy="452" r="4" fill="#E4FF48"/>
+  <path d="M102 223L110 240L128 247L110 254L102 271L94 254L76 247L94 240L102 223Z" fill="#38FF7A"/>
+  <path d="M615 202L621 214L634 219L621 224L615 236L609 224L596 219L609 214L615 202Z" fill="#E4FF48"/>
+  <ellipse cx="356" cy="465" rx="208" ry="22" fill="#000" fill-opacity="0.28"/>
+</svg>
